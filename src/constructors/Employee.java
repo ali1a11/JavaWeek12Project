@@ -23,6 +23,7 @@ public class Employee {
     }
 
     public Employee() {
+        salary = 10000;
     }
 
     public Employee(String name, String jobTitle, int ID, double salary) {
@@ -30,5 +31,16 @@ public class Employee {
         this.jobTitle = jobTitle;
         this.ID = ID;
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", ID=" + ID +
+                ", salary=" + salary +
+                ", company name=" + companyName +
+                '}';
     }
 }
